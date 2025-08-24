@@ -1,0 +1,70 @@
+  
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (master)
+$ git remote add origin https://github.com/EJ-Molina/prac_git.git
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (master)
+$ git fetch origin
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 17 (delta 4), reused 11 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (17/17), 1.97 KiB | 144.00 KiB/s, done.
+From https://github.com/EJ-Molina/prac_git
+ * [new branch]      main       -> origin/main
+ * [new branch]      master     -> origin/master
+ * [new branch]      new-branch -> origin/new-branch
+ * [new branch]      prac_git   -> origin/prac_git
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (master)
+$ git branch
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (master)
+$ git checkout -b prac_git origin/prac_git
+branch 'prac_git' set up to track 'origin/prac_git'.
+Switched to a new branch 'prac_git'
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$ ls
+app.css  app.dart  app.js
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$ touch play.html
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$ git push origin
+Everything up-to-date
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$ git commit -m 'created play.html'
+On branch prac_git
+Your branch is up to date with 'origin/prac_git'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        play.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$ git add play.html
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$ git commit -m 'created play.html'
+[prac_git 3f279ff] created play.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 play.html
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$ git push origin
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 265 bytes | 265.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/EJ-Molina/prac_git.git
+   3329532..3f279ff  prac_git -> prac_git
+
+NITRO 5@LAPTOP-GQRO8A3J MINGW64 ~/Documents/aaaagit (prac_git)
+$
